@@ -1,0 +1,123 @@
+@import "home";
+
+#logo {
+  max-width: 10%;
+}
+.nam {
+	text-align: center;
+}
+
+#titles {
+	background-color: black;
+	border-radius: 14px;
+}
+
+#logo2 {
+  max-width: 200%;
+}
+
+#barre {
+	background-color: #514F62;
+}
+
+.share-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.share-link {
+  flex: 0 0 24%;
+  color: white;
+  font-size: 18px;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  &:hover {
+    color: white;
+  }
+}
+.bg-text {
+  background: #4a4a4a;
+}
+.bg-email {
+  background: #aeaeae;
+}
+.bg-twitter {
+  background: #00a3e1;
+}
+.bg-facebook {
+  background: #3b5998;
+}
+
+
+
+
+.card {
+  height: 175px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  color: white;
+  position: relative;
+  background-image: url('aa.jpg');
+}
+
+.card:hover {
+  border-radius: 8px;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('aa.jpg');
+}
+
+.card2 {
+  height: 175px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  background-size: cover !important;
+  color: white;
+  position: relative;
+  background-image: url('aa.jpg');
+  margin-left: 200px;
+}
+.card-user {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+#card-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 50px;
+}
+.card-description h2 {
+  font-size: 24px;
+}
+.card-description p {
+  font-size: 13px;
+  }
+.card-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index:2;
+  background: black;
+  opacity: 0;
+}
+.card-link:hover{
+  opacity: 0.1;
+}
+
+.container {
+background-color: red;
+}
+
+.nam2 {
+  text-align: center;
+  font-size: 80px;
+}

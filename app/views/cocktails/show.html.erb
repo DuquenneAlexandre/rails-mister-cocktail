@@ -1,0 +1,15 @@
+<br>
+ 
+    <div class="card">
+ <% @cocktail.doses.each do |dose| %>
+
+
+     <p class="nam2"><%= @cocktail.name %></p>
+ 	<p class="card-description "><%= dose.description%></p>
+
+
+   <br>
+
+ <% end %>
+ </div>
+ <br>

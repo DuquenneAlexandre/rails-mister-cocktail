@@ -1,0 +1,14 @@
+<br>
+<br>
+<% @cocktails.each do |cocktail| %>
+<div class="col-xs-2">
+    <div class="card">
+    <h2 class="nam" id="card-category"><%= link_to cocktail.name, cocktail_path(cocktail), {class: "btn btn-primary", id: "titles"} %></h2>
+
+   </div>
+   <br>
+     </div>
+      <!-- insert <div class="card"> -->
+ <% end %>
+
+
