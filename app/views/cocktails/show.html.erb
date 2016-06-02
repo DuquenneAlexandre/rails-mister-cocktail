@@ -1,15 +1,17 @@
 <br>
- 
-    <div class="card">
+<br>
+ <div class="card">
+      <p class="nam2"><%= @cocktail.name %></p>
+   
  <% @cocktail.doses.each do |dose| %>
+<p class="card-description "><%= dose.description%></p>4
 
+<% end %>
 
-     <p class="nam2"><%= @cocktail.name %></p>
- 	<p class="card-description "><%= dose.description%></p>
+   </div>
 
-
-   <br>
-
- <% end %>
- </div>
+      <%= link_to "Delete", cocktail_path(@cocktail),
+      method: :delete,
+      data: { confirm: "Are you sure?" }, class: "btn btn-primary", id: "titles2"%>
  <br>
+
