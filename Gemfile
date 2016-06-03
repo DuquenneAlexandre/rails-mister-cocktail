@@ -47,6 +47,8 @@ group :development do
   gem 'spring'
 end
 gem 'figaro'
+gem 'cloudinary'
+gem 'carrierwave'
 gem 'faker'
 gem 'bootstrap-sass'
 gem 'font-awesome-sass'
