@@ -1,14 +1,8 @@
-<br>
-<br>
+<h1>Cocktails</h1>
+
 <% @cocktails.each do |cocktail| %>
-<div class="col-xs-2">
-    <div class="card">
-    <h2 class="nam" id="card-category"><%= link_to cocktail.name, cocktail_path(cocktail), {class: "btn btn-primary", id: "titles"} %></h2>
-
-   </div>
-   <br>
-     </div>
-      <!-- insert <div class="card"> -->
- <% end %>
-
-
+  <%= link_to cocktail.name, cocktail_path(cocktail), {class: "btn btn-link"} %> <%= link_to "Moderate", cocktail_path(cocktail), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-link" %>
+  <br>
+<% end %>
+<br>
+<%= link_to "Add a new cocktail", new_cocktail_path, {class: "btn btn-success"} %>

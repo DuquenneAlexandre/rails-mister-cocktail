@@ -65,11 +65,12 @@
   color: white;
   position: relative;
   background-image: url('aa.jpg');
+
 }
 
 .card:hover {
   border-radius: 8px;
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('aa.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), img-path('aa.jpg');
 }
 
 .card2 {

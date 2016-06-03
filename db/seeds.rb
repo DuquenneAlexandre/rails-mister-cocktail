@@ -1,26 +1,14 @@
-10.times do
-  post = Cocktail.new({
-                    name: Faker::StarWars.specie
-                
-                  })
-  post.save
-end
+Dose.delete_all
+Ingredient.delete_all
 
-i = 1;
-10.times do
-  post2 = Dose.new({
-                    description: Faker::Lorem.sentence,
-                    cocktail_id: i
-                   
-                  })
-  i += 1
-  post2.save
-end
+Ingredient.create(name: "lemon")
+Ingredient.create(name: "ice")
+Ingredient.create(name: "mint leaves")
+Ingredient.create(name: "whisky")
+Ingredient.create(name: "vodka")
+Ingredient.create(name: "rhum")
+Ingredient.create(name: "gin")
+Ingredient.create(name: "bière")
+Ingredient.create(name: "orange")
+Ingredient.create(name: "soda")
 
-10.times do
-  post3 = Ingredient.new({
-                    name: Faker::Name.first_name
-                
-                  })
-  post3.save
-end
